@@ -1,15 +1,12 @@
+import criptografarTexto from './helper/criptografar.js';
+import descriptografarTexto from './helper/descriptografar.js';
+
 const texto = document.getElementById('area-texto');
 const criptografar = document.getElementById('criptografar');
 const descriptografar = document.getElementById('descriptografar');
-const textoVazio = document.getElementById('resultado')
+const textoVazio = document.getElementById('resultado');
 const spanAviso = document.getElementById('aviso');
-
-
-
-criptografar.addEventListener('click', () => {
-    const result = criptografarTexto(texto.value);
-    textoVazio.innerHTML = `<p>${result}</p>`;
-});
+const copiar = document.getElementById('copiar');
 
 texto.addEventListener('keyup', () => {
     const regex = /[a-zá-úÁ-Ú]+/g;
@@ -21,4 +18,20 @@ texto.addEventListener('keyup', () => {
         spanAviso.style.color = 'black';
         spanAviso.style.fontSize = 'medium';
     }
+});
+
+criptografar.addEventListener('click', () => {
+    const result = criptografarTexto(texto.value);
+    textoVazio.innerHTML = `<p>${result}</p>`;
+});
+
+descriptografar.addEventListener('click', () => {
+    const result = descriptografarTexto(texto.value);
+    textoVazio.innerHTML = `<p>${result}</p>`;
+});
+
+copiar.addEventListener('click', () => {
+    const result = textoVazio.innerText;
+    navigator.clipboard.writeText(result);
+    document.getElementById('alertaCopia').style.display = 'block';
 });
