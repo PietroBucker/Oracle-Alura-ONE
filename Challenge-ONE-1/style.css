@@ -104,6 +104,12 @@ main {
     font-size: x-large;
 } 
 
+footer {
+    text-align: center;
+    font-size: large;
+    margin: 2%;
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     
