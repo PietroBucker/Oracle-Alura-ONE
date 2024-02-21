@@ -1,25 +1,10 @@
 function descriptografarTexto(texto) {
     let novoTexto = '';
-    for (let letra of texto) {
-        if (letra === 'AI') {
-            novoTexto += "A";
-        }
-        else if (letra === 'ENTER') {
-            novoTexto += "E";
-        }
-        else if (letra === 'IMES') {
-            novoTexto += "I";
-        }
-        else if (letra === 'OBER') {
-            novoTexto += "O";
-        }
-        else if (letra === 'UFAT') {
-            novoTexto += "U";
-        }
-        else {
-            novoTexto += letra;
-        }
-    };
+    novoTexto = texto.replace(/AI/g, 'A');
+    novoTexto = novoTexto.replace(/ENTER/g, 'E');
+    novoTexto = novoTexto.replace(/IMES/g, 'I');
+    novoTexto = novoTexto.replace(/OBER/g, 'O');
+    novoTexto = novoTexto.replace(/UFAT/g, 'U');
     return novoTexto;
 }
 
