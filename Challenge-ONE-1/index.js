@@ -13,10 +13,14 @@ texto.addEventListener('keyup', () => {
     if (regex.test(texto.value)) {
         spanAviso.style.color = 'red';
         spanAviso.style.fontSize = 'large';
+        criptografar.disabled = true;
+        descriptografar.disabled = true;
     }
     else {
         spanAviso.style.color = 'black';
         spanAviso.style.fontSize = 'medium';
+        criptografar.disabled = false;
+        descriptografar.disabled = false;
     }
 });
 
