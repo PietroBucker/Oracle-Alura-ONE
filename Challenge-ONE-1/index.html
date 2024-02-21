@@ -12,16 +12,16 @@
     </header>
     <main>
         <section class="main_area-texto">
-            <textarea name="" id="" placeholder="Digite seu texto"></textarea>
-
+            <textarea name="" id="area-texto" placeholder="Digite seu texto"></textarea>
+            <span id="aviso">❗Apenas letras minúsculas e sem acento.</span>
             <div class="main_area-texto_buttons">
-                <button type="button">Criptografar</button>
-                <button>Descriptografar</button>
+                <button id="criptografar" type="button">Criptografar</button>
+                <button id="descriptografar" type="button">Descriptografar</button>
             </div>
         </section>
         <section class="main_area-resultado">
             <img src="/public/High quality products 1 1.svg" alt="desenho de pessoa segurando lupa">
-            <div class="main_area-resultado_texto-vazio">
+            <div id="resultado" class="main_area-resultado_texto-vazio">
                 <p>Nenhuma mensagem encontrada</p><br/>
                 <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
             </div>
@@ -32,4 +32,5 @@
     </main>
     <footer></footer>
 </body>
+<script src="/index.js"></script>
 </html>
