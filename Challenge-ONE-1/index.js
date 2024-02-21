@@ -22,13 +22,13 @@ texto.addEventListener('keyup', () => {
 
 criptografar.addEventListener('click', () => {
     const result = criptografarTexto(texto.value);
-    textoVazio.innerHTML = `<p style="position: relative; word-break: break-all;">${result}</p>`;
+    textoVazio.innerHTML = `<p style="position: relative">${result}</p>`;
     document.getElementById('decoracao').style.display = 'none';
 });
 
 descriptografar.addEventListener('click', () => {
     const result = descriptografarTexto(texto.value);
-    textoVazio.innerHTML = `<p style="position: relative; word-break: break-all;>${result}</p>`;
+    textoVazio.innerHTML = `<p style="position: relative">${result}</p>`;
     document.getElementById('decoracao').style.display = 'none';
 });
 
