@@ -9,7 +9,7 @@ const spanAviso = document.getElementById('aviso');
 const copiar = document.getElementById('copiar');
 
 texto.addEventListener('keyup', () => {
-    const regex = /[a-zá-úÁ-Ú]+/g;
+    const regex = /[A-Zá-úÁ-Ú]+/g;
     if (regex.test(texto.value)) {
         spanAviso.style.color = 'red';
         spanAviso.style.fontSize = 'large';
