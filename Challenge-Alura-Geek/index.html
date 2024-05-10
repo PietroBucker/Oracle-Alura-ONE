@@ -7,22 +7,60 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <img src="/assets/Header_heart.svg" alt="3corações da logo">
-        <p>AluraGeek</p>
-    </header>
     <main>
-        <p>ADICIONAR PRODUTO</p>
-        <form action="" class="form_add_produtos">
-            <input type="text" placeholder="Nome...">
-            <input type="text" placeholder="Preço...">
-            <input type="text" placeholder="Imagem...">
-        </form>
-        <div class="btn_form">
-            <button class="btn_adicionar">Adicionar</button>
-            <button class="btn_limpar">Limpar</button>
+
+        <header>
+            <img src="/assets/Header_heart.svg" alt="3corações da logo">
+            <p>AluraGeek</p>
+        </header>
+        <section class="form_container">
+            <p>ADICIONAR PRODUTO</p>
+            <form action="" class="form_add_produtos">
+                <input name="nome" type="text" placeholder="Nome...">
+                <input name="preco" type="text" placeholder="Preço...">
+                <input name="imagem" type="text" placeholder="Imagem...">
+            </form>
+            <div class="btn_form">
+                <button class="btn_adicionar">Adicionar</button>
+                <button class="btn_limpar">Limpar</button>
+            </div>
+        </section>
+    <section class="cards_container">
+        <p class="card_container_title">MEUS PRODUTOS</p>
+        <div class="cards_content">
+            <div class="card">
+                <img src="/assets/download.jpeg" alt="Imagem do produto">
+                <p>Nome do Produto</p>
+                <p><strong>R$ 00,00</strong></p>
+                <div class="btns_card">
+                    <button class="btn_favoritar">🌟</button>
+                    <button class="btn_remover">✖️</button>
+                </div>
+                
+            </div>
+            <div class="card">
+                <img src="/assets/download.jpeg" alt="Imagem do produto">
+                <p>Nome do Produto</p>
+                <p>R$ 00,00</p>
+                <div class="btns_card">
+                    <button class="btn_favoritar">🌟</button>
+                    <button class="btn_remover">✖️</button>
+                </div>
+                
+            </div>
+            
+            <div class="card">
+                <img src="/assets/download.jpeg" alt="Imagem do produto">
+                <p>Nome do Produto</p>
+                <p>R$ 00,00</p>
+                <div class="btns_card">
+                    <button class="btn_favoritar">🌟</button>
+                    <button class="btn_remover">✖️</button>
+                </div>
+                
+            </div>
         </div>
-    </main>
+    </section>
     <footer>
         <div id="logo">
             <img src="/assets/Header_heart.svg" alt="3corações da logo">
@@ -32,8 +70,9 @@
         <p><strong>Desenvolvido Por Pietro Bucker</strong></p>
         <p>ALURA LATAM - 2024</p>
         
-
+        
     </footer>
-<script src="/js/index.js" type="module"></script>
+</main>
+    <script src="/js/index.js" type="module"></script>
 </body>
 </html>
