@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;300&family=Press+Start+2P&display=swap');
 * {
     margin: 0;
@@ -33,10 +32,10 @@ main{
 	text-align: center;
 	
 }
-main > h1 {
+main > p {
 	font-size: 26px;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 70px;
+	margin-bottom: 20px;
 }
 .form_add_produtos {
 	display: flex;
@@ -49,18 +48,44 @@ main > h1 {
 	width: 100%;
 	height: 58px;
 	margin: 20px 0;
-	padding: 10px;
-	border: 2px solid var(--cor_principal);
+	padding: 10px 20px;
+	border: 2px solid var(--cor_secundaria);
 	border-radius: 40px;
+	
+}::placeholder {
+	font-family: "IBM plex mono", monospace !important;
+	color: var(--cor_secundaria);
 }
 
 .btn_form {
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
+	gap: 20px;
 	margin-top: 20px;
+	margin-bottom: 50px;
 	width: 100%;
 
+}
+
+.btn_limpar, .btn_adicionar {
+	width: 35%;
+	height: 55px;
+	border: none;
+	border-radius: 20px;
+	background-color: var(--cor_secundaria);
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "IBM plex mono", monospace !important;
+	cursor: pointer;
+
+}
+
+.btn_limpar {
+	background-color: white ;
+	color: var(--cor_secundaria) ;
+	border: 2px solid var(--cor_secundaria);
 }
 
 footer{
