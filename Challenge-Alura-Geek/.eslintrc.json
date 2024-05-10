@@ -1,6 +1,10 @@
 {
   // ...
-  "extends": "@trybe/eslint-config-frontend"
+  "extends": "@trybe/eslint-config-frontend",
+  "rules": {
+    "indent": ["error", "tab"],
+    "no-tabs": "off"
+  }
   // ...
   
 }
