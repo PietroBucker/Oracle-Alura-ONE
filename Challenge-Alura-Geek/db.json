@@ -1,0 +1,29 @@
+{
+  "produtos": [
+    {
+      "nome": "Game Boy",
+      "preco": 100,
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZLh8eA-ULLaGGNo0tacIVY2WXTKoC0diJZvH5H7zAw&s",
+      "id": "1"
+    },
+    {
+      "id": "a13d",
+      "nome": "fsdfsd",
+      "preco": "sdfsd",
+      "imagem": "sdfsf"
+    },
+    {
+      "id": "b24e",
+      "nome": "hghghg",
+      "preco": "ghfgh",
+      "imagem": "ghfghfg"
+    },
+    {
+      "id": "a99d",
+      "nome": "fsdfs",
+      "preco": "sdfsdf",
+      "imagem": "sdfsdf",
+      "categoria_id": 1
+    }
+  ]
+}

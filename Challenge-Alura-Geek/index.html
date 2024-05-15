@@ -15,50 +15,23 @@
         </header>
         <section class="form_container">
             <p>ADICIONAR PRODUTO</p>
-            <form action="" class="form_add_produtos">
+            <form class="form_add_produtos" id="form_product">
                 <input name="nome" type="text" placeholder="Nome...">
+                <span>Mínimo de 5 caracteres</span>
                 <input name="preco" type="text" placeholder="Preço...">
+                <span>Insira um Valor</span>
                 <input name="imagem" type="text" placeholder="Imagem...">
+                <span>URL completo da foto</span>
             </form>
             <div class="btn_form">
-                <button class="btn_adicionar">Adicionar</button>
-                <button class="btn_limpar">Limpar</button>
+                <button type="submit" class="btn_adicionar" disabled form="form_product">Adicionar</button>
+                <button type="submit" class="btn_limpar" form="form_product">Limpar</button>
             </div>
         </section>
     <section class="cards_container">
         <p class="card_container_title">MEUS PRODUTOS</p>
         <div class="cards_content">
-            <div class="card">
-                <img src="/assets/download.jpeg" alt="Imagem do produto">
-                <p>Nome do Produto</p>
-                <p><strong>R$ 00,00</strong></p>
-                <div class="btns_card">
-                    <button class="btn_favoritar">🌟</button>
-                    <button class="btn_remover">✖️</button>
-                </div>
-                
-            </div>
-            <div class="card">
-                <img src="/assets/download.jpeg" alt="Imagem do produto">
-                <p>Nome do Produto</p>
-                <p>R$ 00,00</p>
-                <div class="btns_card">
-                    <button class="btn_favoritar">🌟</button>
-                    <button class="btn_remover">✖️</button>
-                </div>
-                
-            </div>
-            
-            <div class="card">
-                <img src="/assets/download.jpeg" alt="Imagem do produto">
-                <p>Nome do Produto</p>
-                <p>R$ 00,00</p>
-                <div class="btns_card">
-                    <button class="btn_favoritar">🌟</button>
-                    <button class="btn_remover">✖️</button>
-                </div>
-                
-            </div>
+            LOADING...
         </div>
     </section>
     <footer>
@@ -73,6 +46,6 @@
         
     </footer>
 </main>
-    <script src="/js/index.js" type="modules"></script>
+    <script src="/js/index.js" type="module"></script>
 </body>
 </html>
