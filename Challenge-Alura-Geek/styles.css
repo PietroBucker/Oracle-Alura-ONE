@@ -57,6 +57,14 @@ header > img {
 	font-family: "IBM plex mono", monospace !important;
 	color: var(--cor_secundaria);
 }
+form > span {
+	font-size: 12px;
+	font-family: "IBM plex mono", monospace;
+	color: red;
+	align-self: flex-start;
+	translate: 10px -15px;
+	display: none;
+}
 
 .btn_form {
 	display: flex;
@@ -87,7 +95,15 @@ header > img {
 	background-color: white ;
 	color: var(--cor_secundaria) ;
 	border: 2px solid var(--cor_secundaria);
+}:disabled {
+	content: 'teste';
+  cursor: not-allowed;
+  background-color: gray;
+  color: white;
+  border: none;
 }
+
+
 /* SECTION DOS PRODUTOS */
 
 .cards_container {
