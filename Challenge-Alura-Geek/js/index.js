@@ -4,6 +4,7 @@ import { requisicaoGet, requisicaoPost } from './connection.js';
 const cardsContent = document.querySelector('.cards_content');
 const btnAdicionar = document.querySelector('.btn_adicionar');
 const inputs = document.querySelectorAll('input');
+const form = document.querySelector('#form_product');
 
 const renderCards = async () => {
 	const data = await requisicaoGet();
@@ -29,15 +30,13 @@ function validaForm() {
 			const next = input.nextElementSibling;
 			if (input.value.length < charValidate) {
 				next.style.display = 'block';
-				btnAdicionar.disabled = true;
 			} else {
 				next.style.display = 'none';
 			}
 		});
 	});
 
-	btnAdicionar.addEventListener('mouseover', () => {
-		console.log(Array.from(inputs).some((input) => input.value.length < 5));
+	form.addEventListener('input', () => {
 		btnAdicionar.disabled = Array.from(inputs)
 			.some((input) => input.value.length < charValidate);
 	});
