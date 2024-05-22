@@ -26,7 +26,7 @@ function validaForm() {
 }
 
 btnAdicionar.addEventListener('click', async (event) => {
-	
+	event.preventDefault();
 	const nome = document.querySelector('input[name="nome"]').value;
 	const preco = Number(document.querySelector('input[name="preco"]').value).toFixed(2);
 	const imagem = document.querySelector('input[name="imagem"]').value;
