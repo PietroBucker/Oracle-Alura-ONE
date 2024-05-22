@@ -4,7 +4,8 @@ import { requisicaoDelete } from './connection.js';
 async function removeCard() {
 	const btnRemover = document.querySelectorAll('.btn_remover');
 	btnRemover.forEach((btn) => {
-		btn.onclick = () => {
+		btn.addEventListener('click', async (event) => {
+			event.preventDefault();
 			requisicaoDelete(btn.id)
 			window.location.reload();
 		};
