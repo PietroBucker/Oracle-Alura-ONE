@@ -26,13 +26,12 @@ function validaForm() {
 
 btnAdicionar.addEventListener('click', async (event) => {
 	event.preventDefault();
-	console.log('teste');
 	const nome = document.querySelector('input[name="nome"]').value;
 	const preco = Number(document.querySelector('input[name="preco"]').value).toFixed(2);
 	const imagem = document.querySelector('input[name="imagem"]').value;
 
 	await requisicaoPost({ nome, preco, imagem });
-	await renderCards();
+	// await renderCards();
 });
 
 export default validaForm;

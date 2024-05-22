@@ -181,6 +181,9 @@ form > span {
 	filter: grayscale(100%);
 }
 
+.favoritar {
+	filter: grayscale(0%);
+}
 
 /* FOOTER */
 footer{

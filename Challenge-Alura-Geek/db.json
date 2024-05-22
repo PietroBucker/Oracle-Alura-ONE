@@ -1,70 +1,10 @@
 {
   "produtos": [
     {
-      "nome": "Game Boy",
-      "preco": 100,
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBZLh8eA-ULLaGGNo0tacIVY2WXTKoC0diJZvH5H7zAw&s",
-      "id": "1"
-    },
-    {
-      "id": "b370",
+      "id": "ef24",
       "nome": "Game Boy Advance",
       "preco": "250.00",
       "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Nintendo-Game-Boy-Advance-Purple-FL.jpg"
-    },
-    {
-      "id": "f80b",
-      "nome": "Game Boy Advance",
-      "preco": 250,
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzb2aszvzl3lpfaqdyQhiVPT98TdZNnPPjldlOE_Sl_g&s"
-    },
-    {
-      "id": "8846",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzb2aszvzl3lpfaqdyQhiVPT98TdZNnPPjldlOE_Sl_g&s"
-    },
-    {
-      "id": "d310",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzb2aszvzl3lpfaqdyQhiVPT98TdZNnPPjldlOE_Sl_g&s"
-    },
-    {
-      "id": "1bc2",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzb2aszvzl3lpfaqdyQhiVPT98TdZNnPPjldlOE_Sl_g&s"
-    },
-    {
-      "id": "20c4",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "dasdas"
-    },
-    {
-      "id": "8cfe",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Nintendo-Game-Boy-Advance-Purple-FL.jpg"
-    },
-    {
-      "id": "53fe",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzb2aszvzl3lpfaqdyQhiVPT98TdZNnPPjldlOE_Sl_g&s"
-    },
-    {
-      "id": "d0c9",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzb2aszvzl3lpfaqdyQhiVPT98TdZNnPPjldlOE_Sl_g&"
-    },
-    {
-      "id": "b3e9",
-      "nome": "Game Boy Advance",
-      "preco": "250.00",
-      "imagem": "https://encrypted-tbn0.gstatic.com/"
     }
   ]
 }
