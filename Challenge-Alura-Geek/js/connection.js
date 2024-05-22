@@ -33,11 +33,11 @@ async function requisicaoPost(produto) {
 }
 // DELETE
 async function requisicaoDelete(id) {
+	console.log(id)
 	try{
-	const response = await fetch(`https://json-server-seven-black.vercel.app/api/produtos/${id}`, {
+	await fetch(`https://json-server-seven-black.vercel.app/api/produtos/${id}`, {
 		method: 'DELETE',
 	});
-	console.log(response);
 	}catch(e){
 		console.log(e);
 	}
