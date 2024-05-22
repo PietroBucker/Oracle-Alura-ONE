@@ -8,7 +8,7 @@ async function removeCard() {
 			event.preventDefault();
 			requisicaoDelete(btn.id)
 			window.location.reload();
-		}
+		});
 	});
 }
 export default removeCard;
