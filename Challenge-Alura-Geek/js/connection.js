@@ -1,7 +1,7 @@
 // GET
 async function requisicaoGet() {
 	try {
-		const response = await fetch('https://json-server-nine-steel.vercel.app/produtos');
+		const response = await fetch('https://json-server-seven-black.vercel.app/api/produtos');
 		if (!response.ok) {
 			const error = new Error('Erro ao buscar os produtos');
 			error.status = response.status;
@@ -18,22 +18,30 @@ async function requisicaoGet() {
 }
 // POST
 async function requisicaoPost(produto) {
-	await fetch('https://json-server-nine-steel.vercel.app/produtos', {
+	try{
+		
+	await fetch('https://json-server-seven-black.vercel.app/api/produtos', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify(produto),
 	});
+	}catch(e){
+		console.log(e);
+	}
 }
 // DELETE
 async function requisicaoDelete(id) {
+	try{
 	console.log(id);
-	const response = await fetch(`https://json-server-nine-steel.vercel.app/produtos/${id}`, {
+	const response = await fetch(`https://json-server-seven-black.vercel.app/api/produtos/${id}`, {
 		method: 'DELETE',
 	});
 	console.log(response);
-	return 'ok';
+	}catch(e){
+		console.log(e);
+	}
 }
 
 export {
