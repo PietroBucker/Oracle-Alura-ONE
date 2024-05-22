@@ -1,7 +1,7 @@
 // GET
 async function requisicaoGet() {
 	try {
-		const response = await fetch('http://localhost:3000/produtos');
+		const response = await fetch('https://json-server-seven-black.vercel.app/api/produtos');
 		if (!response.ok) {
 			const error = new Error('Erro ao buscar os produtos');
 			error.status = response.status;
@@ -18,23 +18,33 @@ async function requisicaoGet() {
 }
 // POST
 async function requisicaoPost(produto) {
-	await fetch('http://localhost:3000/produtos', {
+	try{
+		
+	await fetch('https://json-server-seven-black.vercel.app/api/produtos', {
 		method: 'POST',
 		headers: {
 			'Content-Type': 'application/json',
 		},
 		body: JSON.stringify(produto),
 	});
-	return 'ok';
+	}catch(e){
+		console.log(e);
+	}
 }
 // DELETE
 async function requisicaoDelete(id) {
-	console.log(id);
-	const response = await fetch(`http://localhost:3000/produtos/${id}`, {
+	console.log(id)
+	try{
+	await fetch(`https://json-server-seven-black.vercel.app/api/produtos/${id}`, {
 		method: 'DELETE',
+		headers: {
+			'Content-Type': 'application/json',
+		}
 	});
-	console.log(response);
-	return 'ok';
+		window.location.reload();
+	}catch(e){
+		console.log(e);
+	}
 }
 
 export {
