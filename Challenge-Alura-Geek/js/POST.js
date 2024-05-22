@@ -19,14 +19,14 @@ function validaForm() {
 	});
 
 	form.addEventListener('input', (e) => {
-		e.preventDefault()
+		
 		btnAdicionar.disabled = Array.from(inputs)
 			.some((input) => input.value.length < charValidate);
 	});
 }
 
 btnAdicionar.addEventListener('click', async (event) => {
-	event.preventDefault();
+	
 	const nome = document.querySelector('input[name="nome"]').value;
 	const preco = Number(document.querySelector('input[name="preco"]').value).toFixed(2);
 	const imagem = document.querySelector('input[name="imagem"]').value;
