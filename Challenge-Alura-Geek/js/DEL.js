@@ -7,7 +7,7 @@ async function removeCard() {
 		btn.addEventListener('click', (event) => {
 			event.preventDefault();
 			requisicaoDelete(btn.id)
-			window.location.reload();
+			// window.location.reload();
 		});
 	});
 }
