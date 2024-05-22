@@ -32,7 +32,7 @@ btnAdicionar.addEventListener('click', async (event) => {
 	const imagem = document.querySelector('input[name="imagem"]').value;
 
 	await requisicaoPost({ nome, preco, imagem });
-	// await renderCards();
+	window.location.reload();
 });
 
 export default validaForm;
