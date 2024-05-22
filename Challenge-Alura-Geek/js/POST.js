@@ -23,7 +23,6 @@ function validaForm() {
 			.some((input) => input.value.length < charValidate);
 	});
 }
-
 btnAdicionar.addEventListener('click', async (event) => {
 	event.preventDefault();
 	const nome = document.querySelector('input[name="nome"]').value;
@@ -31,7 +30,7 @@ btnAdicionar.addEventListener('click', async (event) => {
 	const imagem = document.querySelector('input[name="imagem"]').value;
 
 	await requisicaoPost({ nome, preco, imagem });
-	// await renderCards();
+	window.location.reload();
 });
 
 export default validaForm;
