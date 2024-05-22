@@ -25,7 +25,6 @@ async function requisicaoPost(produto) {
 		},
 		body: JSON.stringify(produto),
 	});
-	return 'ok';
 }
 // DELETE
 async function requisicaoDelete(id) {
