@@ -37,7 +37,10 @@ async function requisicaoDelete(id) {
 	try{
 	await fetch(`https://json-server-seven-black.vercel.app/api/produtos/${id}`, {
 		method: 'DELETE',
+		headers: {
+			'Content-Type': 'application/json',
 	});
+		window.location.reload();
 	}catch(e){
 		console.log(e);
 	}
