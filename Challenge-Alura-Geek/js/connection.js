@@ -39,6 +39,7 @@ async function requisicaoDelete(id) {
 		method: 'DELETE',
 		headers: {
 			'Content-Type': 'application/json',
+		}
 	});
 		window.location.reload();
 	}catch(e){
