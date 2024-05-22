@@ -6,5 +6,6 @@ async function removeCard() {
 	btnRemover.forEach((btn) => {
 		btn.onclick = () => requisicaoDelete(btn.id);
 	});
+	window.location.reload();
 }
 export default removeCard;
