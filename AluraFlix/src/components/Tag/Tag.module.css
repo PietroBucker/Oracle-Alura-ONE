@@ -1,0 +1,12 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-primary);
+    background-color: #6BD1FF;
+    color: white;
+    width: 295px;
+    height: 90px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}

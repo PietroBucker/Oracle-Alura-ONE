@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+:root {
+  --font-primary: 'Roboto', sans-serif;
+  --font-secundary: 'Source Sans 3', sans-serif;
+
+  --Dark-Gray: #262626;
+  --Border-Color-Primary: #2271D1;
+  --Front: #6BD1FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Dark-Gray);
+
+}

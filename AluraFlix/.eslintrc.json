@@ -1,0 +1,11 @@
+{
+  // ...
+  "extends": "@trybe/eslint-config-frontend",
+  "rules": {
+    "import/no-unresolved": "off", // Desabilita a regra de importações não resolvidas
+    "import/extensions": "off", // Desabilita a regra de extensão de arquivos ausente
+    "react/prop-types": "off", // Desabilita a regra de prop-types
+    "max-len": "off", // Desabilita a regra de "máximo de caracteres por linha
+    "react/no-unescaped-entities": "off" // Desabilita a regra de "entidades não escapadas
+  }
+}

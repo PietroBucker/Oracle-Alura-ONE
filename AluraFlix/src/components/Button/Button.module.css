@@ -1,0 +1,19 @@
+button{
+    font-family: var(--font-secundary);
+    width: 180px;
+    height: 54px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 9px;
+    background-color: var(--Dark-Gray);
+}
+
+.white{
+    color: white;
+    border-color: white;
+}
+
+.blue{
+    color: var(--Border-Color-Primary);
+    border-color: var(--Border-Color-Primary);
+}
