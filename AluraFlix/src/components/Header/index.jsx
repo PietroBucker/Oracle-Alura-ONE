@@ -10,11 +10,13 @@ export default function Header() {
 
       <div className={ Style.buttonContainer }>
         <Button
+          to="/"
           type="blue"
         >
           HOME
         </Button>
         <Button
+          to="/novo-video"
           type="white"
         >
           NOVO VÍDEO

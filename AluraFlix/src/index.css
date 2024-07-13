@@ -7,6 +7,9 @@
   --Dark-Gray: #262626;
   --Border-Color-Primary: #2271D1;
   --Front: #6BD1FF;
+
+  /* card config vars */
+  --Size-Card: 432px;
 }
 
 * {

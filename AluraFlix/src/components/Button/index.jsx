@@ -1,7 +1,14 @@
+import { Link } from 'react-router-dom';
 import Style from './Button.module.css';
 
-export default function Button({ type, children }) {
+export default function Button({ type, children, ...rest }) {
   return (
-    <button className={ Style[type] }>{children}</button>
+    <Link { ...rest }>
+      <button
+        className={ `${Style[type]} ${Style.button}` }
+      >
+        {children}
+      </button>
+    </Link>
   );
 }

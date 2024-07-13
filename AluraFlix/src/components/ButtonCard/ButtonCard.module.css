@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    color : white;
+}
+
+.container > img {
+    width: 20px;
+    background-color: var(--Dark-Gray);
+    border: none;
+}
+
+.container > span {
+    text-transform: uppercase;
+    font-family: var(--font-primary);
+    font-weight: 800;
+}
