@@ -1,9 +1,11 @@
-// import Style from './Header.module.css';
+import { useLocation } from 'react-router-dom';
 import logo from '@/assets/logo.png';
 import Button from '../Button';
 import Style from './Header.module.css';
 
 export default function Header() {
+  const { pathname } = useLocation();
+  const changeColor = (to) => (pathname === to ? 'blue' : 'white');
   return (
     <div className={ Style.container }>
       <img src={ logo } alt="" />
@@ -11,13 +13,14 @@ export default function Header() {
       <div className={ Style.buttonContainer }>
         <Button
           to="/"
-          type="blue"
+          type={ changeColor('/') }
+
         >
           HOME
         </Button>
         <Button
           to="/novo-video"
-          type="white"
+          type={ changeColor('/novo-video') }
         >
           NOVO VÍDEO
         </Button>
