@@ -1,0 +1,57 @@
+/* ADD VIDEO */
+
+.novo-video {
+    display: flex;
+    justify-content: justify;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 80vw;
+    padding: 100px 150px;
+}
+
+.novo-video label {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+}
+
+.novo-video input {
+    margin: 10px 10px 10px 0;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.novo-video select {
+    margin: 10px 100px 10px 0;
+
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.novo-video textarea {
+    margin: 10px 10px 10px 0;
+    padding: 100px 10px;
+    border-radius: 5px;
+}
+
+/* EDITAR VIDEO */
+
+.edita-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: var(--Size-Card);
+    margin: 40px 30px 40px 0px;
+    border-radius: 5px;
+}
+
+.edita-video input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #6BD1FF;
+}
