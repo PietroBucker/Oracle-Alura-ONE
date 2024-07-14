@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '@/pages/Home';
 import Layout from '@/pages/Layout';
+import NovoVideo from './pages/NovoVideo';
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <Layout /> }>
           <Route index element={ <Home /> } />
-          <Route path="novo-video" element={ <div>NovoVideo</div> } />
+          <Route path="novo-video" element={ <NovoVideo /> } />
         </Route>
       </Routes>
 
