@@ -5,8 +5,8 @@
     justify-content: justify;
     flex-wrap: wrap;
     align-items: center;
-    width: 80vw;
-    padding: 100px 150px;
+    width: 90vw;
+    padding: 50px 5%;
 }
 
 .novo-video label {

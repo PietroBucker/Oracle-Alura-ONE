@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+
+.container h2 {
+    font-family: var(--font-secondary);
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 20px;
+
+    width: 80vw;
+    border-top: 1px solid rgb(26, 26, 26);
+    border-bottom: 1px solid rgb(26, 26, 26);
+    padding: 30px 0;
+
+}
+
+.containerText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    margin: 100px 0 50px 0;
+    font-family: var(--font-primary);
+}
+
+.containerText h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    width: 80vw;
+    gap: 50px;
+    margin-bottom: 100px;
+}
