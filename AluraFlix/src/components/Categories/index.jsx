@@ -1,17 +1,25 @@
+import { useContext } from 'react';
 import Style from './Categories.module.css';
 import Tag from '../Tag';
 import Card from '../Card';
+import { VideoContext } from '../../context/VideoContext';
 
 export default function Categories() {
+  const { videos, categories } = useContext(VideoContext);
   return (
-    <div className={ Style.container }>
-      <Tag>frontend</Tag>
-      <Card />
-    </div>
+    <>
+      {categories.map((cat) => (
+        <div key={ cat } className={ Style.container }>
+          {videos[cat].length === 0 ? '' : <Tag>{cat}</Tag>}
+          <Card videos={ videos[cat] } />
+        </div>
+      ))}
+    </>
   );
 }
 
 const objetoPrincipal = {
+  id: 'id',
   titulo: 'Titulo',
   descricao: 'Descrição',
   imagem: 'Imagem',

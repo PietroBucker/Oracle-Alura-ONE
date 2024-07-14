@@ -3,9 +3,9 @@ import Style from './Card.module.css';
 import delIcon from '@/assets/deletar.svg';
 import editIcon from '@/assets/editar.svg';
 
-export default function Card({ video }) {
-  return (
-    <div className={ Style.container }>
+export default function Card({ videos }) {
+  return videos.length === 0 ? '' : videos.map((video) => (
+    <div key={ video.id } className={ Style.container }>
       <div className={ Style.video }>
 
         <iframe
@@ -22,5 +22,5 @@ export default function Card({ video }) {
         <ButtonCard icon={ editIcon }>editar</ButtonCard>
       </div>
     </div>
-  );
+  ));
 }
