@@ -9,8 +9,8 @@ export default function Banner() {
     >
       <div className={ Style.infoContainer }>
         <Tag>FRONT END</Tag>
+        <h1 className={ Style.textTitle }>Olá, eu sou o Banner</h1>
         <p>
-          <h1>Olá, eu sou o Banner</h1>
           Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React,s ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma 'Pokedex'!
 
         </p>
