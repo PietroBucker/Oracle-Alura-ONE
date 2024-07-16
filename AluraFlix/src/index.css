@@ -6,7 +6,10 @@
 
   --Dark-Gray: #262626;
   --Border-Color-Primary: #2271D1;
-  --Front: #6BD1FF;
+  --Front-Color: #6BD1FF;
+  --Back-Color: #00C86F;
+  --Inovacao-Color: #FFBA05;
+  --Gestao-Color: #c600d8;
 
   /* card config vars */
   --Size-Card: 432px;

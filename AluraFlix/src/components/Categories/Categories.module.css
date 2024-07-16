@@ -2,12 +2,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 40px 20px 0 40px;
+  
   background: none;
   border: none;
 }
 
 .title {
-    margin: 20px 0;
-    border: 1px solid white;
+  margin: 20px 0;
+  border: 1px solid white;
+}
+
+.carregando {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  height: 100vh;
+  color: white;
+  font-size: 40px;
 }

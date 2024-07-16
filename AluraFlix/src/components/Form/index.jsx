@@ -1,35 +1,67 @@
+import { useContext } from 'react';
 import Style from './Form.module.css';
+import { VideoContext } from '@/context/VideoContext';
 
 export default function Form({ type }) {
+  const { video, onChange } = useContext(VideoContext);
+
   return (
-    <form className={ Style[type] }>
+    <form
+      className={ Style[type] }
+      onSubmit={ (e) => e.preventDefault() }
+    >
       <label>
         Titulo
 
-        <input type="text" />
+        <input
+          name="titulo"
+          value={ video.titulo }
+          onChange={ onChange }
+          type="text"
+        />
       </label>
       <label>
         Categoria
 
-        <select>
+        <select
+          name="categoria"
+          value={ video.catetoria }
+          onClick={ onChange }
+        >
           <option value="frontend">frontend</option>
           <option value="backend">backend</option>
+          <option value="inovacao">Inovação</option>
+          <option value="gestao">Gestão</option>
         </select>
       </label>
       <label>
         Imagem
 
-        <input type="text" />
+        <input
+          name="imagem"
+          value={ video.imagem }
+          onChange={ onChange }
+          type="text"
+        />
       </label>
       <label>
         Vídeo
 
-        <input type="text" />
+        <input
+          name="video"
+          value={ video.video }
+          onChange={ onChange }
+          type="text"
+        />
       </label>
       <label>
         Descrição
 
-        <textarea />
+        <textarea
+          name="descricao"
+          value={ video.descricao }
+          onChange={ onChange }
+        />
       </label>
     </form>
   );

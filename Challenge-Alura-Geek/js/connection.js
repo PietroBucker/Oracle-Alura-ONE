@@ -18,31 +18,29 @@ async function requisicaoGet() {
 }
 // POST
 async function requisicaoPost(produto) {
-	try{
-		
-	await fetch('https://json-server-seven-black.vercel.app/api/produtos', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json',
-		},
-		body: JSON.stringify(produto),
-	});
-	}catch(e){
+	try {
+		await fetch('https://json-server-seven-black.vercel.app/api/produtos', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify(produto),
+		});
+	} catch (e) {
 		console.log(e);
 	}
 }
 // DELETE
 async function requisicaoDelete(id) {
-	console.log(id)
-	try{
-	await fetch(`https://json-server-seven-black.vercel.app/api/produtos/${id}`, {
-		method: 'DELETE',
-		headers: {
-			'Content-Type': 'application/json',
-		}
-	});
+	try {
+		await fetch(`https://json-server-seven-black.vercel.app/api/produtos/${id}`, {
+			method: 'DELETE',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		});
 		window.location.reload();
-	}catch(e){
+	} catch (e) {
 		console.log(e);
 	}
 }

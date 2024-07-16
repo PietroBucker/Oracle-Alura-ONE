@@ -6,8 +6,7 @@ async function removeCard() {
 	btnRemover.forEach((btn) => {
 		btn.addEventListener('click', (event) => {
 			event.preventDefault();
-			requisicaoDelete(btn.id)
-			// window.location.reload();
+			requisicaoDelete(btn.id);
 		});
 	});
 }

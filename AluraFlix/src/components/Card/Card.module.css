@@ -4,8 +4,9 @@
     justify-content: center;
     align-items: center;
     width: var(--Size-Card);
-    margin: 40px 30px 40px 0px;
+    margin: 40px 30px 100px 0px;
     border-radius: 5px;
+    position: relative;
     
 }
 
@@ -13,7 +14,6 @@ iframe {
     width: var(--Size-Card);
     height: 250px;
     border-radius: 5px;
-    border: 4px solid #6BD1FF;
 }
 
 .video::before {
@@ -21,7 +21,6 @@ iframe {
     position: absolute;
     width: var(--Size-Card);
     height: 250px;
-    box-shadow: 0px 0px 17px 8px #6BD1FF inset;
     border-radius: 5px;
     /* Sombra interna */
     pointer-events: none;
@@ -35,8 +34,56 @@ iframe {
     justify-content: space-around;
     width: 100%;
     padding: 20px 0 20px;
-    border: 4px solid #6BD1FF;
     border-top: none;
     border-radius: 0 0 20px 20px;
     margin-top: -6px;
+}
+
+.desc {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    background-color: #ffffffc4;
+    display: none;
+    text-align: justify;
+}
+.video:hover .desc {
+    display: block;
+}
+
+
+/* FRONT */
+.frontend.video::before {
+    box-shadow: 0px 0px 17px 8px var(--Front-Color) inset;
+}
+.frontend.buttonContainer {
+    border: 4px solid var(--Front-Color);
+}
+
+/* BACK */
+.backend.video::before {
+    box-shadow: 0px 0px 17px 8px var(--Back-Color) inset;
+}
+.backend.buttonContainer {
+    border: 4px solid var(--Back-Color);
+}
+
+/* INOVAÇÃO */
+.inovacao.video::before {
+    box-shadow: 0px 0px 17px 8px var(--Inovacao-Color) inset;
+}
+.inovacao.buttonContainer {
+    border: 4px solid var(--Inovacao-Color);
+}
+
+/* GESTAO */
+.gestao.video::before {
+    box-shadow: 0px 0px 17px 8px var(--Gestao-Color) inset;
+}
+.gestao.buttonContainer {
+    border: 4px solid var(--Gestao-Color);
 }

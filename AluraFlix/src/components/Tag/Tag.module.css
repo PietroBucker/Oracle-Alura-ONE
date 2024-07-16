@@ -3,10 +3,25 @@
     justify-content: center;
     align-items: center;
     font-family: var(--font-primary);
-    background-color: #6BD1FF;
     color: white;
     width: 295px;
     height: 90px;
-    border-radius: 5px;
+    border-radius: 15px;
     text-transform: uppercase;
+}
+
+.frontend {
+    background-color: var(--Front-Color);
+}
+
+.backend {
+    background-color: var(--Back-Color);
+}
+
+.inovacao {
+    background-color: var(--Inovacao-Color);
+}
+
+.gestao {
+    background-color: var(--Gestao-Color);
 }

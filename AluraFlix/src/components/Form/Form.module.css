@@ -7,6 +7,7 @@
     align-items: center;
     width: 90vw;
     padding: 50px 5%;
+    
 }
 
 .novo-video label {
@@ -14,26 +15,36 @@
     flex-direction: column;
     width: 50%;
     margin-top: 50px;
+    
 }
 
 .novo-video input {
     margin: 10px 10px 10px 0;
-
+    background-color: black;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid var(--Dark-Gray);
+    color: white;
 }
 
 .novo-video select {
     margin: 10px 100px 10px 0;
-
+    background-color: black;
     padding: 10px;
     border-radius: 5px;
+    border: 1px solid var(--Dark-Gray);
+    color: white;
 }
 
 .novo-video textarea {
     margin: 10px 10px 10px 0;
-    padding: 100px 10px;
+    padding: 10px;
+    height: 150px;
     border-radius: 5px;
+    background-color: black;
+    border: 1px solid var(--Dark-Gray);
+    color: white;
+
 }
 
 /* EDITAR VIDEO */

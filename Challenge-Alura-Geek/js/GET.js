@@ -31,7 +31,8 @@ const renderCards = async () => {
 				<p><strong>R$ ${item.preco}</strong></p>
 					<div class="btns_card">
 						<button id="favorito_${item.id}" class="btn_favoritar">🌟</button>
-						<button type="submit" id="${item.id}" class="btn_remover">✖️</button>
+						<button 
+							type="submit" id="${item.id}" class="btn_remover">✖️</button>
 					</div>
 				</div>
 				`;

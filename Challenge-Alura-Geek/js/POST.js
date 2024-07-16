@@ -18,8 +18,7 @@ function validaForm() {
 		});
 	});
 
-	form.addEventListener('input', (e) => {
-		
+	form.addEventListener('input', () => {
 		btnAdicionar.disabled = Array.from(inputs)
 			.some((input) => input.value.length < charValidate);
 	});
