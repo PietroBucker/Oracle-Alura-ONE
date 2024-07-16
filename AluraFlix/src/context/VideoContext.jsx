@@ -20,7 +20,6 @@ export function VideoProvider({ children }) {
   const [video, setVideo] = useState(initialStateVideo);
   const [videos, setVideos] = useState(initialStateVideos);
   const [categories, setCategories] = useState(['frontend', 'backend', 'inovacao', 'gestao']);
-  const [updatePage, setUpdatePage] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -29,11 +28,7 @@ export function VideoProvider({ children }) {
       if (!response.ok) {
         throw new Error('Não foi possível pegar os dados');
       }
-      const data = await response.json();
-      setVideos((prevState) => ({
-        ...prevState,
-        [endPoint]: data,
-      }));
+      return response.json();
     };
 
     Promise.all([
@@ -42,12 +37,17 @@ export function VideoProvider({ children }) {
       fetchData('inovacao'),
       fetchData('gestao'),
     ])
-      .then(() => setIsLoading(false));
-
-    if (updatePage) {
-      setUpdatePage(false);
-    }
-  }, [updatePage]);
+      .then((results) => {
+        setVideos({
+          frontend: results[0],
+          backend: results[1],
+          inovacao: results[2],
+          gestao: results[3],
+        });
+        if (isLoading) setIsLoading(false);
+        console.log('fetch');
+      });
+  }, [isLoading]);
 
   const onChange = (event) => {
     const { name, value } = event.target;
@@ -69,8 +69,8 @@ export function VideoProvider({ children }) {
           categories,
           setCategories,
           onChange,
-          setUpdatePage,
           isLoading,
+          setIsLoading,
       }
       }
     >

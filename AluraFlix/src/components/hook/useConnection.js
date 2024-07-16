@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { VideoContext } from '../../context/VideoContext';
 
 export const useConnection = () => {
-  const { video, setVideo, setUpdatePage } = useContext(VideoContext);
+  const { video, setVideo, setIsLoading } = useContext(VideoContext);
   const cleanInput = () => {
     setVideo({
       titulo: '',
@@ -21,7 +21,7 @@ export const useConnection = () => {
         },
         body: JSON.stringify(video),
       });
-      setUpdatePage(true);
+      setIsLoading(true);
       cleanInput();
       return response;
     } catch (error) {

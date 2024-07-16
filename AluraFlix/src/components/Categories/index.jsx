@@ -6,6 +6,7 @@ import { VideoContext } from '../../context/VideoContext';
 
 export default function Categories() {
   const { videos, categories, isLoading } = useContext(VideoContext);
+
   return (
 
     <div style={ { padding: '50px 50px' } }>
