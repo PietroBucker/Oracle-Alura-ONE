@@ -1,13 +1,21 @@
+.cardsContainer {
+    display: flex;
+    align-items: center;
+    cursor: grab;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: var(--Size-Card);
-    margin: 40px 30px 100px 0px;
+    margin-right: 50px;
     border-radius: 5px;
     position: relative;
-    
+    scroll-snap-align: start;
 }
 
 iframe {

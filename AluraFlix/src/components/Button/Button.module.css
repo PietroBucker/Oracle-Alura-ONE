@@ -8,6 +8,10 @@
     background-color: var(--Dark-Gray);
 }
 
+.button:hover{
+    box-shadow: inset 2px 2px 20px rgb(84, 192, 241);
+}
+
 .white{
     color: white;
     border-color: white;

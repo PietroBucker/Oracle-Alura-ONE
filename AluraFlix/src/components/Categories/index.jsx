@@ -9,13 +9,15 @@ export default function Categories() {
 
   return (
 
-    <div style={ { padding: '50px 50px' } }>
+    <div style={ { padding: '0 50px 50px ' } }>
 
       {isLoading ? <div className={ Style.carregando }>Carregando...</div>
         : categories.map((cat) => (
           <div key={ cat } className={ Style.container }>
             {videos[cat].length === 0 ? '' : <Tag>{cat}</Tag>}
+
             <Card videos={ videos[cat] } />
+
           </div>
         ))}
       ;

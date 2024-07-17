@@ -2,13 +2,14 @@ import { useContext } from 'react';
 import Style from './Form.module.css';
 import { VideoContext } from '@/context/VideoContext';
 
-export default function Form({ type }) {
+export default function Form({ type, ...rest }) {
   const { video, onChange } = useContext(VideoContext);
 
   return (
     <form
       className={ Style[type] }
       onSubmit={ (e) => e.preventDefault() }
+      { ...rest }
     >
       <label>
         Titulo
@@ -25,8 +26,8 @@ export default function Form({ type }) {
 
         <select
           name="categoria"
-          value={ video.catetoria }
-          onClick={ onChange }
+          value={ video.categoria }
+          onChange={ onChange }
         >
           <option value="frontend">frontend</option>
           <option value="backend">backend</option>

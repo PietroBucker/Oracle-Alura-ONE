@@ -7,7 +7,7 @@ const initialStateVideo = {
   descricao: '',
   imagem: '',
   video: '',
-  categoria: '',
+  categoria: 'frontend',
 };
 const initialStateVideos = {
   frontend: [],
@@ -21,7 +21,8 @@ export function VideoProvider({ children }) {
   const [videos, setVideos] = useState(initialStateVideos);
   const [categories, setCategories] = useState(['frontend', 'backend', 'inovacao', 'gestao']);
   const [isLoading, setIsLoading] = useState(true);
-
+  const [isEditing, setIsEditing] = useState(null);
+  const [destaque, setDestaque] = useState();
   useEffect(() => {
     const fetchData = async (endPoint) => {
       const response = await fetch(`https://apitestdevvideo.onrender.com/${endPoint}`);
@@ -45,7 +46,7 @@ export function VideoProvider({ children }) {
           gestao: results[3],
         });
         if (isLoading) setIsLoading(false);
-        console.log('fetch');
+        setDestaque(results[0][0]);
       });
   }, [isLoading]);
 
@@ -58,6 +59,15 @@ export function VideoProvider({ children }) {
     });
   };
 
+  const cleanInput = () => {
+    setVideo({
+      titulo: '',
+      descricao: '',
+      imagem: '',
+      video: '',
+      categoria: 'frontend',
+    });
+  };
   return (
     <VideoContext.Provider
       value={
@@ -71,6 +81,11 @@ export function VideoProvider({ children }) {
           onChange,
           isLoading,
           setIsLoading,
+          isEditing,
+          setIsEditing,
+          cleanInput,
+          destaque,
+          setDestaque,
       }
       }
     >
